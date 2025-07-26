@@ -1,0 +1,545 @@
+/* Plak deze code in je style.css. Je kunt de bestaande inhoud volledig vervangen. */
+
+/* Algemene stijlen en lettertype */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #FFF0F5; /* Een lichte, zachte roze achtergrond (LavenderBlush) */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Zorgt ervoor dat de body altijd het volledige scherm vult */
+}
+
+/* De hoofdcontainer voor de app */
+.app-container {
+    width: 90%;
+    max-width: 500px; /* Maximale breedte op grote schermen */
+    text-align: center;
+}
+
+/* De titel van de app */
+header h1 {
+    color: #DB7093; /* Een donkerdere roze kleur (PaleVioletRed) */
+    font-size: 2.5em; /* Groter lettertype voor de titel */
+    margin-bottom: 30px;
+}
+
+/* Stijlen voor de menulijst */
+.main-menu ul { list-style: none; padding: 0; margin: 0; }
+.main-menu li { margin-bottom: 15px; }
+
+/* Stijlen voor de menuknoppen (links) */
+.main-menu a {
+    display: block; background-color: #FFFFFF; color: #C71585; padding: 20px;
+    text-decoration: none; border-radius: 12px; font-size: 1.2em; font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.main-menu a:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); }
+
+/* --- Stijlen voor Vocabulary Pagina --- */
+.page-container { width: 95%; max-width: 800px; }
+.page-header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #FFB6C1; padding-bottom: 10px; }
+.back-button { text-decoration: none; color: #DB7093; font-weight: bold; }
+.exercise-card { background-color: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 30px; }
+.exercise-card h2 { color: #C71585; }
+
+/* Stijlen voor Drag and Drop Oefening */
+#word-bank { display: flex; flex-wrap: wrap; gap: 10px; background-color: #FFF0F5; padding: 15px; border-radius: 8px; margin-bottom: 20px; min-height: 50px; }
+.word { padding: 8px 15px; background-color: white; border: 1px solid #FFB6C1; border-radius: 20px; cursor: grab; user-select: none; transition: background-color 0.3s; }
+.word.dragging { opacity: 0.5; cursor: grabbing; }
+#categories-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+.category-box { background-color: #fff9fb; border: 2px dashed #FFB6C1; border-radius: 8px; padding: 10px; min-height: 100px; transition: background-color 0.3s; }
+.category-box.drag-over { background-color: #FFE4E1; }
+.category-box h3 { margin-top: 0; text-align: center; color: #DB7093; }
+.word.correct { background-color: #98FB98 !important; border-color: #2E8B57 !important; }
+.word.incorrect { background-color: #FFC0CB !important; border-color: #DC143C !important; }
+
+/* Stijlen voor Click to Fill Oefening */
+.word-bank-style {
+    display: flex; flex-wrap: wrap; gap: 10px; background-color: #FFF0F5;
+    padding: 15px; border-radius: 8px;
+    margin-bottom: 35px; /* EXTRA RUIMTE TOEGEVOEGD HIER */
+}
+.choice-word { padding: 8px 15px; background-color: white; border: 1px solid #FFB6C1; border-radius: 20px; cursor: pointer; user-select: none; transition: all 0.2s; }
+.choice-word:hover { background-color: #DB7093; color: white; }
+.choice-word.used { background-color: #e0e0e0; color: #999; cursor: not-allowed; text-decoration: line-through; }
+.sentence { margin-bottom: 15px; font-size: 1.1em; line-height: 1.6; }
+.fill-in-input { border: none; border-bottom: 2px solid #DB7093; background: transparent; text-align: center; padding: 5px; font-size: 1em; width: 130px; cursor: pointer; }
+.fill-in-input.active { background-color: #FFE4E1; }
+#feedback-fill-in { margin-top: 15px; font-weight: bold; }
+
+/* Knop Stijlen */
+.button-group { display: flex; justify-content: center; gap: 15px; margin-top: 20px; }
+.exercise-card button { background-color: #DB7093; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 1em; transition: background-color 0.2s; }
+.exercise-card button:hover { background-color: #C71585; }
+.exercise-card button.secondary { background-color: #f0f0f0; color: #555; border: 1px solid #ccc; }
+.exercise-card button.secondary:hover { background-color: #e0e0e0; }
+
+/* Responsive Design voor mobiel */
+@media (max-width: 600px) {
+    header h1 { font-size: 2em; }
+    .main-menu a { padding: 15px; font-size: 1em; }
+    .button-group { flex-direction: column; }
+}
+/* ======================================= */
+/* === NIEUWE STIJLEN VOOR GRAMMAR.HTML ==== */
+/* ======================================= */
+
+/* Matching Game Stijlen */
+#matching-game-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#questions-col, #answers-col {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.match-item {
+    padding: 15px;
+    border: 2px solid #FFB6C1; /* LightPink */
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+}
+
+.match-item:hover {
+    border-color: #DB7093; /* PaleVioletRed */
+    transform: scale(1.02);
+}
+
+.match-item.selected {
+    border-color: #C71585; /* MediumVioletRed */
+    background-color: #FFF0F5; /* LavenderBlush */
+    box-shadow: 0 0 10px rgba(199, 21, 133, 0.3);
+}
+
+/* Paired items krijgen een unieke kleur */
+.match-item.paired { border-style: solid; }
+.match-item.pair-0 { background-color: #f0f8ff; } /* AliceBlue */
+.match-item.pair-1 { background-color: #f5fffa; } /* MintCream */
+.match-item.pair-2 { background-color: #fffacd; } /* LemonChiffon */
+.match-item.pair-3 { background-color: #f0fff0; } /* Honeydew */
+.match-item.pair-4 { background-color: #e6e6fa; } /* Lavender */
+.match-item.pair-5 { background-color: #fff0f5; } /* LavenderBlush */
+.match-item.pair-6 { background-color: #fafad2; } /* LightGoldenrodYellow */
+.match-item.pair-7 { background-color: #f8f8ff; } /* GhostWhite */
+
+/* Feedback stijlen */
+.match-item.correct { border-color: #2E8B57; box-shadow: 0 0 10px rgba(46, 139, 87, 0.4); }
+.match-item.incorrect { border-color: #DC143C; box-shadow: 0 0 10px rgba(220, 20, 60, 0.4); }
+#feedback-match { font-weight: bold; text-align: center; margin-top: 15px; }
+
+
+/* Tabel Stijlen */
+.table-container {
+    overflow-x: auto; /* Zorgt voor horizontaal scrollen op mobiel */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+table th, table td {
+    padding: 12px;
+    border: 1px solid #FFDDE1;
+    text-align: left;
+}
+table th {
+    background-color: #DB7093;
+    color: white;
+}
+table tr:nth-child(even) {
+    background-color: #FFF9FB;
+}
+
+/* Responsive aanpassing voor de matching game */
+@media (max-width: 700px) {
+    #matching-game-container {
+        flex-direction: column;
+    }
+    #questions-col, #answers-col {
+        width: 100%;
+    }
+}
+/* ======================================= */
+/* === NIEUWE STIJLEN VOOR PRACTICE.HTML ==== */
+/* ======================================= */
+
+/* Audio speler */
+.custom-audio-player {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+/* Luisteroefening */
+.question-block {
+    padding: 15px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.question-text {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.options-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.options-group label {
+    cursor: pointer;
+}
+.question-block.correct-q {
+    border-color: #2E8B57; /* SeaGreen */
+    background-color: #f0fff0; /* Honeydew */
+}
+.question-block.incorrect-q {
+    border-color: #DC143C; /* Crimson */
+    background-color: #fff0f5; /* LavenderBlush */
+}
+#feedback-listening {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Zinnen corrigeren oefening */
+.correction-item {
+    margin-bottom: 25px;
+}
+.correction-item p {
+    margin-top: 0;
+}
+.correction-input-group {
+    display: flex;
+    gap: 10px;
+}
+.correction-input-group input {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 1em;
+}
+.show-answer-btn {
+    padding: 8px 12px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.correct-answer-text {
+    margin-top: 8px;
+    background-color: #f0f8ff; /* AliceBlue */
+    padding: 10px;
+    border-radius: 4px;
+}
+.hidden {
+    display: none;
+}
+
+/* Spreekoefening */
+.speaking-prompt {
+    background-color: #fff9fb;
+    border-left: 4px solid #DB7093;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 0 8px 8px 0;
+}
+.speaking-prompt h3 {
+    margin-top: 0;
+    color: #C71585;
+}
+/* ======================================= */
+/* === NIEUWE STIJLEN VOOR WORKBOOK.HTML ==== */
+/* ======================================= */
+
+.day-section {
+    margin-bottom: 20px;
+    border: 1px solid #FFDDE1;
+    border-radius: 12px;
+}
+
+.day-section summary {
+    padding: 15px 20px;
+    cursor: pointer;
+    background-color: #fff9fb;
+    border-radius: 12px;
+    outline: none; /* Verwijder de standaard focus-rand */
+    transition: background-color 0.2s;
+}
+
+.day-section summary:hover {
+    background-color: #FFF0F5;
+}
+
+.day-section[open] > summary {
+    border-bottom: 1px solid #FFDDE1;
+    border-radius: 12px 12px 0 0;
+}
+
+.day-section h2 {
+    display: inline;
+    color: #C71585;
+    margin: 0;
+}
+
+.day-content {
+    padding: 20px;
+}
+
+/* Stijl voor de matching game kolommen in het werkboek */
+#d2e1_terms, #d2e1_meanings {
+    width: 100%;
+}
+#d2e1_terms .match-item, #d2e1_meanings .match-item {
+    width: auto; /* Reset breedte van de grammar pagina */
+}
+
+/* Stijlen voor de aparte audio-items in het werkboek */
+.audio-question-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.audio-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inline-audio-player {
+    height: 35px; /* Maakt de audiospeler compacter */
+    max-width: 250px;
+}
+/* ======================================= */
+/* NIEUWE STIJLEN VOOR WERKBOEK SLEEP-OEFENING */
+/* ======================================= */
+
+.draggable-word {
+    padding: 8px 15px;
+    background-color: white;
+    border: 1px solid #FFB6C1;
+    border-radius: 20px;
+    cursor: grab;
+    user-select: none;
+    transition: all 0.2s;
+}
+
+.draggable-word:hover {
+    border-color: #DB7093;
+    transform: scale(1.05);
+}
+
+.drop-zone {
+    display: inline-block;
+    vertical-align: middle;
+    width: 120px;
+    height: 38px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+    /* Zorgt ervoor dat het woord netjes in de doos past */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drop-zone .draggable-word {
+    cursor: default;
+    background-color: #f0f8ff;
+}
+
+.drop-zone.drag-over {
+    background-color: #FFE4E1; /* MistyRose */
+    border-style: solid;
+}
+
+.drop-zone.correct {
+    border-color: #2E8B57;
+    background-color: #f0fff0;
+}
+
+.drop-zone.incorrect {
+    border-color: #DC143C;
+    background-color: #fff0f5;
+}
+/* ======================================= */
+/* NIEUWE STIJLEN VOOR WERKBOEK DAG 3 OEFENING 2 */
+/* ======================================= */
+
+.rearrange-item {
+    margin-bottom: 30px;
+}
+
+.word-pool {
+    background-color: #f0f8ff;
+    padding: 10px;
+    border-radius: 8px;
+    min-height: 45px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.sentence-drop-zone {
+    background-color: #fafafa;
+    border: 2px dashed #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    min-height: 45px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.draggable-word-tile {
+    padding: 8px 12px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: grab;
+    user-select: none;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.check-rearrange-btn {
+    background-color: #DB7093;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rearrange-feedback {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.rearrange-feedback.correct {
+    color: #2E8B57;
+}
+.rearrange-feedback.incorrect {
+    color: #DC143C;
+}
+/* ======================================= */
+/* === NIEUWE STIJLEN VOOR SUPPLEMENTARY.HTML ==== */
+/* ======================================= */
+
+.reading-text-box {
+    background-color: #fff9fb;
+    border: 1px solid #FFDDE1;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin: 25px 0;
+    line-height: 1.6;
+}
+
+.reading-text-box h3 {
+    margin-top: 0;
+    color: #C71585;
+}
+
+.reading-text-box h4 {
+    color: #555;
+    font-style: italic;
+}
+
+/* ======================================= */
+/* === STIJLEN VOOR VIDEOS.HTML ==== */
+/* ======================================= */
+
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.video-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Zorgt ervoor dat de video binnen de afgeronde hoeken blijft */
+    text-align: center;
+}
+
+.video-card h3 {
+    color: #C71585;
+    padding: 15px 10px;
+    margin: 0;
+}
+
+.video-card video {
+    width: 100%;
+    display: block;
+}
+/* Stijlen voor de Videogalerij */
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding-top: 20px;
+}
+.video-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+.video-card h3 {
+    color: #C71585;
+    padding: 15px 10px;
+    margin: 0;
+}
+.video-card video {
+    width: 100%;
+    display: block;
+}
+
+/* Stijlen voor Uitklapbare Secties (Hergebruikt van Workbook) */
+.day-section {
+    margin-bottom: 20px;
+    border: 1px solid #FFDDE1;
+    border-radius: 12px;
+}
+.day-section summary {
+    padding: 15px 20px;
+    cursor: pointer;
+    background-color: #fff9fb;
+    border-radius: 12px;
+    outline: none;
+    transition: background-color 0.2s;
+}
+.day-section summary:hover {
+    background-color: #FFF0F5;
+}
+.day-section[open] > summary {
+    border-bottom: 1px solid #FFDDE1;
+    border-radius: 12px 12px 0 0;
+}
+.day-section h2 {
+    display: inline;
+    color: #C71585;
+    margin: 0;
+}
