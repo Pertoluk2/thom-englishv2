@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 6 Workbook - Thom's English App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-container">
+        <header class="page-header">
+            <h1>Unit 6: Workbook</h1>
+            <a href="workbook.html" class="back-button">← Quay lại Workbook Menu</a>
+        </header>
+
+        <details class="day-section">
+            <summary><h2>Day 1</h2></summary>
+            <div class="day-content">
+                <section class="exercise-card">
+                    <h3>Bài tập 1: Nối từ với mô tả</h3>
+                    <p>Nối từ ở cột bên trái với mô tả đúng ở cột bên phải.</p>
+                    <div id="u6wb-d1-e1-container" class="matching-game-container"></div>
+                    <div class="button-group">
+                        <button id="check-u6wb-d1-e1">Kiểm tra</button>
+                        <button id="reset-u6wb-d1-e1" class="secondary">Làm lại</button>
+                    </div>
+                </section>
+                <section class="exercise-card">
+                    <h3>Bài tập 2: Sắp xếp lại chữ cái</h3>
+                    <p>Sắp xếp các chữ cái để tạo thành từ đúng.</p>
+                    <div id="u6wb-d1-e2-container"></div>
+                    <div class="button-group"><button id="check-u6wb-d1-e2">Kiểm tra</button></div>
+                </section>
+            </div>
+        </details>
+
+        <details class="day-section">
+            <summary><h2>Day 2</h2></summary>
+            <div class="day-content">
+                <section class="exercise-card">
+                    <h3>Bài tập 1: Sắp xếp đoạn hội thoại</h3>
+                    <p>Kéo và thả các câu vào đúng thứ tự trong hộp bên dưới.</p>
+                    <div id="u6wb-d2-e1-dropzone" class="sentence-drop-zone" style="min-height: 200px;"></div>
+                    <div id="u6wb-d2-e1-pool" class="word-pool"></div>
+                    <div class="button-group"><button id="check-u6wb-d2-e1">Kiểm tra</button></div>
+                </section>
+                <section class="exercise-card">
+                    <h3>Bài tập 2: Nghe và chọn (A, B, C, D)</h3>
+                    <p>Nghe và chọn câu trả lời đúng. Omdat we de afbeeldingen niet kunnen zien, kies je de letter van de juiste optie.</p>
+                    <audio controls class="custom-audio-player"><source src="audio/Day 2_Ex 2.mp3" type="audio/mpeg"></audio>
+                    <div id="u6wb-d2-e2-container"></div>
+                    <div class="button-group"><button id="check-u6wb-d2-e2">Kiểm tra</button></div>
+                </section>
+                <section class="exercise-card">
+                    <h3>Bài tập 3 & 4: Nghe và trả lời</h3>
+                    <audio controls class="custom-audio-player"><source src="audio/Day 2_Ex 3 & Ex 4.mp3" type="audio/mpeg"></audio>
+                    <hr class="exercise-divider">
+                    <h4>Bài tập 3: Nghe và điền vào chỗ trống</h4>
+                    <div id="u6wb-d2-e3-container"></div>
+                    <div class="button-group"><button id="check-u6wb-d2-e3">Kiểm tra Bài 3</button></div>
+                    <hr class="exercise-divider">
+                    <h4>Bài tập 4: Nghe và chọn từ đúng</h4>
+                    <div id="u6wb-d2-e4-container"></div>
+                    <div class="button-group"><button id="check-u6wb-d2-e4">Kiểm tra Bài 4</button></div>
+                </section>
+            </div>
+        </details>
+
+        <details class="day-section">
+            <summary><h2>Day 3</h2></summary>
+            <div class="day-content">
+                 <section class="exercise-card">
+                    <h3>Bài tập 1 & 2: Nghe và viết</h3>
+                    <audio controls class="custom-audio-player"><source src="audio/Day 3_Ex 1 & Ex 2.mp3" type="audio/mpeg"></audio>
+                    <hr class="exercise-divider">
+                    <h4>Bài tập 1: Nghe và viết lại câu</h4>
+                    <div id="u6wb-d3-e1-container"></div>
+                    <div class="button-group"><button id="check-u6wb-d3-e1">Kiểm tra Bài 1</button></div>
+                    <hr class="exercise-divider">
+                    <h4>Bài tập 2: Nghe và điền vào chỗ trống</h4>
+                    <div id="u6wb-d3-e2-container"></div>
+                    <div class="button-group"><button id="check-u6wb-d3-e2">Kiểm tra Bài 2</button></div>
+                </section>
+            </div>
+        </details>
+
+    </div>
+    <script src="unit6-workbook.js"></script>
+</body>
+</html>

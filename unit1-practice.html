@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện tập - Thom's English App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-container">
+        <header class="page-header">
+            <h1>Practice (Luyện tập)</h1>
+            <a href="index.html" class="back-button">← Quay lại Menu</a>
+        </header>
+
+        <section class="exercise-card">
+            <h2>Bài tập 1: Nghe và Chọn</h2>
+            <p>Nghe đoạn âm thanh và chọn câu trả lời đúng cho mỗi câu hỏi.</p>
+            
+            <audio controls class="custom-audio-player">
+                <source src="audio/practice_audio.mp3" type="audio/mpeg">
+                Trình duyệt của bạn không hỗ trợ phần tử âm thanh.
+            </audio>
+
+            <div id="listening-questions-container">
+                </div>
+
+            <div class="button-group">
+                <button id="check-listening-button">Kiểm tra câu trả lời</button>
+            </div>
+            <p id="feedback-listening"></p>
+        </section>
+
+        <section class="exercise-card">
+            <h2>Bài tập 2: Sửa câu</h2>
+            <p>Viết lại các câu và sửa lỗi. Nhấp vào "Hiện đáp án" để xem câu đúng.</p>
+            <div id="sentence-correction-container">
+                </div>
+        </section>
+
+        <section class="exercise-card">
+            <h2>Bài tập 3 & 4: Luyện nói</h2>
+            <p>Sử dụng các gợi ý dưới đây để tự luyện nói.</p>
+            
+            <div class="speaking-prompt">
+                <h3>Tình huống 1: Tại một bữa tiệc</h3>
+                <p>Giới thiệu bản thân với một người bạn mới. Nói về tên, tuổi, quê quán, công việc, gia đình và sở thích của bạn.</p>
+            </div>
+            <div class="speaking-prompt">
+                <h3>Tình huống 2: Ngày đầu đi làm</h3>
+                <p>Giới thiệu bản thân với đồng nghiệp ở các phòng ban khác. Cho biết tên, tuổi và chức vụ của bạn và kết thúc một cách thân thiện.</p>
+            </div>
+             <div class="speaking-prompt">
+                <h3>Giới thiệu qua Sơ đồ tư duy</h3>
+                <p>Sử dụng cấu trúc (Personal Info, Job, Hobby, Family) để giới thiệu đầy đủ về bản thân.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="unit1-practice.js"></script>
+    </body>
+</html>
