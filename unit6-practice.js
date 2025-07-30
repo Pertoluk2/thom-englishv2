@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- Task 1: Listen and fill in the blanks ---
+    // GECORRIGEERDE ANTWOORDEN
     const u6c1_answers = [
-        "laptops", "looking for", "schoolwork", "storage", "projects","files",
+        "laptops", "looking for", "schoolwork", "storage", "files",
         "$600", "pricey", "discount", "10%", "mouse", 
         "free", "install", "$50", "lower", "$40"
     ];
@@ -37,7 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('check-u6-c1').addEventListener('click', () => {
             u6c1_answers.forEach((answer, index) => {
                 const input = document.getElementById(`u6c1_ans_${index}`);
-                input.style.borderBottom = (input.value.trim().toLowerCase() === answer) ? '2px solid green' : '2px solid red';
+                // Verwijder extra tekens zoals $ voor een betere controle
+                const userAnswer = input.value.trim().toLowerCase().replace('$', '');
+                const correctAnswer = answer.toLowerCase().replace('$', '');
+                
+                input.style.borderBottom = (userAnswer === correctAnswer) ? '2px solid green' : '2px solid red';
             });
         });
     }
