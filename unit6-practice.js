@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- Task 1: Listen and fill in the blanks ---
     const u6c1_answers = [
-        "laptops", "looking for", "school", "storage", "projects", 
-        "$1,200", "expensive", "discount", "10%", "mouse", 
+        "laptops", "looking for", "schoolwork", "storage", "projects","files",
+        "$600", "pricey", "discount", "10%", "mouse", 
         "free", "install", "$50", "lower", "$40"
     ];
 
