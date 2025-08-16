@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 4 Vocabulary - Thom's English App</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Extra stijlen specifiek voor deze pagina */
+        #image-matching-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            align-items: center;
+        }
+        .matching-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff9fb;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .matching-item img {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <header class="page-header">
+            <h1>Unit 4: Transportation Vocabulary</h1>
+            <a href="vocabulary.html" class="back-button">← Quay lại Vocabulary Menu</a>
+        </header>
+
+        <section class="exercise-card">
+            <h2>Bài tập 1: Kéo và thả</h2>
+            <p>Kéo de juiste naam van het voertuig onder de afbeelding.</p>
+            
+            <div id="u4-a1-wordbank" class="word-bank-style">
+                </div>
+
+            <div id="image-matching-container">
+                </div>
+
+            <div class="button-group">
+                <button id="check-u4-a1">Kiểm tra</button>
+            </div>
+        </section>
+    </div>
+    <script src="unit4-vocabulary.js"></script>
+</body>
+</html>
