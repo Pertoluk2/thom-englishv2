@@ -3,22 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Unit Page - Thom's English App</title>
+    <title>Unit 8 Vocabulary</title>
     <link rel="stylesheet" href="style.css">
+    <script src="unit8-vocabulary.js"></script>
+    <style>
+        #u8-a1-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            align-items: center;
+        }
+        .matching-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff9fb;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .matching-item img {
+            max-width: 150px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+        .matching-item .drop-zone {
+            width: 100%;
+            height: 40px;
+            border: 2px dashed #ccc;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .matching-item .drop-zone.correct {
+            border-color: #2E8B57;
+            background-color: #e6ffe6;
+        }
+        .matching-item .drop-zone.incorrect {
+            border-color: #DC143C;
+            background-color: #ffe6e6;
+        }
+    </style>
 </head>
 <body>
     <div class="page-container">
         <header class="page-header">
-            <h1>New Unit Page</h1>
-            <a href="index.html" class="back-button">← Quay lại Menu</a>
+            <h1>Unit 8: Asking questions at work</h1>
+            <a href="vocabulary.html" class="back-button">← Quay lại menu Từ vựng</a>
         </header>
 
         <section class="exercise-card">
-            <h2>Bài tập 1</h2>
-            <p>De inhoud voor deze oefening komt hier.</p>
+            <h2>Bài tập 1: Kéo và thả</h2>
+            <p>Kéo từ đúng vào dưới hình ảnh.</p>
+            <div id="u8-a1-wordbank" class="word-bank-style"></div>
+            <div id="u8-a1-container"></div>
+            <div class="button-group">
+                <button id="check-u8-a1">Kiểm tra</button>
+            </div>
+            <p id="feedback-u8-a1" class="feedback-text"></p>
         </section>
-
     </div>
-    <script src="placeholder.js"></script>
+    <script src="unit8-vocabulary.js"></script>
 </body>
 </html>

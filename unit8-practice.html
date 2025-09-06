@@ -3,22 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Unit Page - Thom's English App</title>
+    <title>Unit 8 Practice</title>
     <link rel="stylesheet" href="style.css">
+    <script src="unit8-practice.js"></script>
 </head>
 <body>
     <div class="page-container">
         <header class="page-header">
-            <h1>New Unit Page</h1>
-            <a href="index.html" class="back-button">← Quay lại Menu</a>
+            <h1>Unit 8: Asking questions at work</h1>
+            <a href="practice.html" class="back-button">← Quay lại menu Luyện tập</a>
         </header>
 
-        <section class="exercise-card">
-            <h2>Bài tập 1</h2>
-            <p>De inhoud voor deze oefening komt hier.</p>
-        </section>
+        <div class="exercise-card">
+            <h2>C. Practice</h2>
+            
+            <details class="day-section">
+                <summary>
+                    <h2>Task 1 & 2: Listen and fill in the blanks</h2>
+                </summary>
+                <div class="day-content">
+                    <p>Nghe đoạn hội thoại và điền từ còn thiếu vào chỗ trống. Sau đó, trả lời các câu hỏi.</p>
+                    <audio controls class="custom-audio-player">
+                        <source src="audio/unit8-practice-task1.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
 
+                    <div class="conversation">
+                        <p>Martin: Pilar. There's something wrong with this (1) <input type="text" id="task1-q1" class="fill-in-input-small">. I keep pressing the button but it won't do anything.</p>
+                        <p>Pilar: Oh dear. Do you want me to give you a (2) <input type="text" id="task1-q2" class="fill-in-input-small">, Martin?</p>
+                        <p>Martin: Thanks.</p>
+                        <p>Pilar: Have you any idea what this (3) <input type="text" id="task1-q3" class="fill-in-input-small"> means? The one flashing here.</p>
+                        <p>Martin: Maybe it means there is some (4) <input type="text" id="task1-q4" class="fill-in-input-small"> stuck inside. It might be worth (5) <input type="text" id="task1-q5" class="fill-in-input-small"> it and having a look.</p>
+                        <p>Pilar: How do I do that?</p>
+                        <p>Martin: You could try (6) <input type="text" id="task1-q6" class="fill-in-input-small"> that lever there. That's the one.</p>
+                        <p>Pilar: Oh yes. You're right. There is some paper (7) <input type="text" id="task1-q7" class="fill-in-input-small"> in here. Thanks a lot. I think that's sorted it now.</p>
+                    </div>
+
+                    <div class="button-group" style="margin-top: 20px;">
+                        <button id="check-task1">Kiểm tra</button>
+                        <button id="show-answers-task1" class="secondary">Hiện đáp án</button>
+                    </div>
+                    <div id="feedback-task1" class="rearrange-feedback"></div>
+
+                    <hr class="exercise-divider">
+
+                    <h3>Task 2: Answer the questions</h3>
+                    <div class="question-list">
+                        <p><b>a. What's the problem?</b></p>
+                        <textarea id="task2-q1" rows="2" style="width:100%;"></textarea>
+                        <p><b>b. What do they do?</b></p>
+                        <textarea id="task2-q2" rows="2" style="width:100%;"></textarea>
+                        <p><b>c. What was the cause of the problem?</b></p>
+                        <textarea id="task2-q3" rows="2" style="width:100%;"></textarea>
+                    </div>
+                </div>
+            </details>
+
+            <details class="day-section">
+                <summary>
+                    <h2>Task 3: Put the sentences into the correct order</h2>
+                </summary>
+                <div class="day-content">
+                    <p>Sắp xếp các câu để tạo thành một đoạn hội thoại đúng. Kéo các câu vào đúng vị trí.</p>
+                    <div id="rearrange-container" style="display: flex; flex-direction: column;">
+                        <div id="pool" class="word-pool">
+                            <div class="draggable-word-tile" draggable="true" data-order="2">Sophia: The printer is by the meeting rooms, near the back.</div>
+                            <div class="draggable-word-tile" draggable="true" data-order="6">Sophia: They're in the same drawer as the stapler, right next to the pens.</div>
+                            <div class="draggable-word-tile" draggable="true" data-order="1">Tom: Hey, do you know where the stapler is?</div>
+                            <div class="draggable-word-tile" draggable="true" data-order="3">Tom: Thanks! And where's the printer?</div>
+                            <div class="draggable-word-tile" draggable="true" data-order="7">Tom: Perfect, thanks for your help!</div>
+                            <div class="draggable-word-tile" draggable="true" data-order="4">Sophia: It's in the supply drawer near the kitchen.</div>
+                            <div class="draggable-word-tile" draggable="true" data-order="5">Tom: Got it! And do you know where the paper clips are?</div>
+                        </div>
+                    </div>
+                    <div class="button-group">
+                        <button id="check-task3">Kiểm tra</button>
+                    </div>
+                    <div id="feedback-task3" class="rearrange-feedback"></div>
+                </div>
+            </details>
+
+            <details class="day-section">
+                <summary>
+                    <h2>Task 4: Complete the conversation (Speaking)</h2>
+                </summary>
+                <div class="day-content">
+                    <p>Hoàn thành đoạn hội thoại dựa trên các gợi ý. Bạn có thể luyện nói đoạn hội thoại này thật to.</p>
+                    <div class="speaking-prompt">
+                        <p>Emily: **[Hỏi xem chiếc dập ghim ở đâu]**</p>
+                        <p>Ryan: It's in the supply drawer.</p>
+                        <p>Emily: **[Hỏi xem kẹp giấy ở đâu]**</p>
+                        <p>Ryan: They're in the same drawer as the stapler, right next to the pens.</p>
+                        <p>Emily: **[Cảm ơn và hỏi cách in tài liệu]**</p>
+                        <p>Ryan: Just go to the printer and send your document from the computer.</p>
+                        <p>Emily: **[Hỏi xem máy in ở đâu]**</p>
+                        <p>Ryan: It's down the hall, near the copy room.</p>
+                        <p>Emily: **[Cảm ơn và hỏi cách sử dụng máy photocopy]**</p>
+                        <p>Ryan: It's easy. Just place your document on the scanner, press 'Copy,' and then select how many copies you want.</p>
+                        <p>Emily: **[Cảm ơn]**</p>
+                        <p>Ryan: You're welcome!</p>
+                    </div>
+                </div>
+            </details>
+        </div>
     </div>
-    <script src="placeholder.js"></script>
+    <script src="unit8-practice.js"></script>
 </body>
 </html>

@@ -3,22 +3,328 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Unit Page - Thom's English App</title>
+    <title>Unit 8 Workbook</title>
     <link rel="stylesheet" href="style.css">
+    <script src="unit8-workbook.js"></script>
+    <style>
+        .fill-in-input {
+            width: 90%;
+            max-width: 400px;
+        }
+    </style>
 </head>
 <body>
     <div class="page-container">
         <header class="page-header">
-            <h1>New Unit Page</h1>
-            <a href="index.html" class="back-button">← Quay lại Menu</a>
+            <h1>Unit 8: Asking questions at work</h1>
+            <a href="workbook.html" class="back-button">← Quay lại menu Sách bài tập</a>
         </header>
 
-        <section class="exercise-card">
-            <h2>Bài tập 1</h2>
-            <p>De inhoud voor deze oefening komt hier.</p>
-        </section>
+        <div class="exercise-card">
+            <h2>Workbook Exercises</h2>
 
+            <details class="day-section" open>
+                <summary>
+                    <h2>Day 1: Grammar - Questions with 'to be' and 'do'</h2>
+                </summary>
+                <div class="day-content">
+                    <h3>Exercise 1: Put the words in the correct order.</h3>
+                    <p>Sắp xếp các từ để tạo thành câu hỏi đúng.</p>
+                    <ol>
+                        <li>
+                            <p>words: this / Is / cafeteria / the /?</p>
+                            <input type="text" id="q1-day1-ex1" class="fill-in-input" placeholder="Câu trả lời của bạn: Is this the cafeteria?">
+                        </li>
+                        <li>
+                            <p>words: this / working / printer / Is /?</p>
+                            <input type="text" id="q2-day1-ex1" class="fill-in-input" placeholder="Câu trả lời của bạn: Is this printer working?">
+                        </li>
+                        <li>
+                            <p>words: desk / this / Is / your /?</p>
+                            <input type="text" id="q3-day1-ex1" class="fill-in-input" placeholder="Câu trả lời của bạn: Is this your desk?">
+                        </li>
+                        <li>
+                            <p>words: closed / the / windows / Are /?</p>
+                            <input type="text" id="q4-day1-ex1" class="fill-in-input" placeholder="Câu trả lời của bạn: Are the windows closed?">
+                        </li>
+                        <li>
+                            <p>words: this / locked / Is / cupboard /?</p>
+                            <input type="text" id="q5-day1-ex1" class="fill-in-input" placeholder="Câu trả lời của bạn: Is this cupboard locked?">
+                        </li>
+                        <li>
+                            <p>words: messy / desk / his / Is /?</p>
+                            <input type="text" id="q6-day1-ex1" class="fill-in-input" placeholder="Câu trả lời của bạn: Is his desk messy?">
+                        </li>
+                        <li>
+                            <p>words: CEO / the / she / Is /?</p>
+                            <input type="text" id="q7-day1-ex1" class="fill-in-input" placeholder="Câu trả lời của bạn: Is she the CEO?">
+                        </li>
+                        <li>
+                            <p>words: assistant / Jo's / you / Are /?</p>
+                            <input type="text" id="q8-day1-ex1" class="fill-in-input" placeholder="Câu trả lời của bạn: Are you Jo's assistant?">
+                        </li>
+                    </ol>
+
+                    <div class="button-group">
+                        <button id="check-ex1">Kiểm tra</button>
+                        <button id="show-ex1" class="secondary">Hiện đáp án</button>
+                    </div>
+                    <div id="feedback-ex1" class="rearrange-feedback"></div>
+
+                    <hr class="exercise-divider">
+
+                    <h3>Exercise 2: Rewrite the statements as questions.</h3>
+                    <p>Viết lại các câu sau thành câu hỏi.</p>
+                    <ol>
+                        <li>That's John's pen. → <input type="text" id="q1-day1-ex2" class="fill-in-input" placeholder="Câu trả lời của bạn: Is that John's pen?"></li>
+                        <li>This is the kitchen. → <input type="text" id="q2-day1-ex2" class="fill-in-input" placeholder="Câu trả lời của bạn: Is this the kitchen?"></li>
+                        <li>That's the CEO's office. → <input type="text" id="q3-day1-ex2" class="fill-in-input" placeholder="Câu trả lời của bạn: Is that the CEO's office?"></li>
+                        <li>Tina's the CEO's PA. → <input type="text" id="q4-day1-ex2" class="fill-in-input" placeholder="Câu trả lời của bạn: Is Tina the CEO's PA?"></li>
+                        <li>Tom's desk is organized. → <input type="text" id="q5-day1-ex2" class="fill-in-input" placeholder="Câu trả lời của bạn: Is Tom's desk organized?"></li>
+                        <li>The printer is working. → <input type="text" id="q6-day1-ex2" class="fill-in-input" placeholder="Câu trả lời của bạn: Is the printer working?"></li>
+                        <li>The stationery cabinet is locked. → <input type="text" id="q7-day1-ex2" class="fill-in-input" placeholder="Câu trả lời của bạn: Is the stationery cabinet locked?"></li>
+                    </ol>
+
+                    <div class="button-group">
+                        <button id="check-ex2">Kiểm tra</button>
+                        <button id="show-ex2" class="secondary">Hiện đáp án</button>
+                    </div>
+                    <div id="feedback-ex2" class="rearrange-feedback"></div>
+
+                    <hr class="exercise-divider">
+
+                    <h3>Exercise 3: Fill in the gaps using "Do" or "Does".</h3>
+                    <p>Chọn từ đúng để hoàn thành mỗi câu hỏi.</p>
+                    <ol>
+                        <li><span class="fill-in-radio"><input type="radio" name="d1e3-q1" value="do"> Do</span><span class="fill-in-radio"><input type="radio" name="d1e3-q1" value="does"> Does</span> you have an appointment?</li>
+                        <li><span class="fill-in-radio"><input type="radio" name="d1e3-q2" value="do"> Do</span><span class="fill-in-radio"><input type="radio" name="d1e3-q2" value="does"> Does</span> she work with Justin?</li>
+                        <li><span class="fill-in-radio"><input type="radio" name="d1e3-q3" value="do"> Do</span><span class="fill-in-radio"><input type="radio" name="d1e3-q3" value="does"> Does</span> your office have a scanner?</li>
+                        <li><span class="fill-in-radio"><input type="radio" name="d1e3-q4" value="do"> Do</span><span class="fill-in-radio"><input type="radio" name="d1e3-q4" value="does"> Does</span> you go to the finance meetings?</li>
+                        <li><span class="fill-in-radio"><input type="radio" name="d1e3-q5" value="do"> Do</span><span class="fill-in-radio"><input type="radio" name="d1e3-q5" value="does"> Does</span> Kish write the minutes?</li>
+                        <li><span class="fill-in-radio"><input type="radio" name="d1e3-q6" value="do"> Do</span><span class="fill-in-radio"><input type="radio" name="d1e3-q6" value="does"> Does</span> you have a stapler I can borrow?</li>
+                        <li><span class="fill-in-radio"><input type="radio" name="d1e3-q7" value="do"> Do</span><span class="fill-in-radio"><input type="radio" name="d1e3-q7" value="does"> Does</span> Saul work in your team?</li>
+                        <li><span class="fill-in-radio"><input type="radio" name="d1e3-q8" value="do"> Do</span><span class="fill-in-radio"><input type="radio" name="d1e3-q8" value="does"> Does</span> they know what to do?</li>
+                        <li><span class="fill-in-radio"><input type="radio" name="d1e3-q9" value="do"> Do</span><span class="fill-in-radio"><input type="radio" name="d1e3-q9" value="does"> Does</span> he know the CEO?</li>
+                        <li><span class="fill-in-radio"><input type="radio" name="d1e3-q10" value="do"> Do</span><span class="fill-in-radio"><input type="radio" name="d1e3-q10" value="does"> Does</span> we have a meeting now?</li>
+                    </ol>
+
+                    <div class="button-group">
+                        <button id="check-d1-ex3">Kiểm tra</button>
+                    </div>
+                    <div id="feedback-d1-ex3" class="rearrange-feedback"></div>
+                </div>
+            </details>
+
+            <details class="day-section">
+                <summary>
+                    <h2>Day 2: Grammar - Match & Circle</h2>
+                </summary>
+                <div class="day-content">
+                    <h3>Exercise 1: Match the situations to the correct questions.</h3>
+                    <p>Nối các tình huống với câu hỏi phù hợp.</p>
+                    <div id="matching-game-container-d2e1">
+                        <div id="questions-col-d2e1" class="match-column">
+                            <div class="match-item" data-id="1" data-pair="c">1. I need to print this report.</div>
+                            <div class="match-item" data-id="2" data-pair="e">2. We've run out of pens.</div>
+                            <div class="match-item" data-id="3" data-pair="a">3. I'm going to make some hot drinks.</div>
+                            <div class="match-item" data-id="4" data-pair="b">4. I need to call Paola.</div>
+                            <div class="match-item" data-id="5" data-pair="g">5. We should talk to our clients soon.</div>
+                            <div class="match-item" data-id="6" data-pair="d">6. I want to work from home tomorrow.</div>
+                            <div class="match-item" data-id="7" data-pair="i">7. You want to see a doctor.</div>
+                            <div class="match-item" data-id="8" data-pair="f">8. I want to send a letter.</div>
+                            <div class="match-item" data-id="9" data-pair="h">9. Henry should be here by now.</div>
+                        </div>
+                        <div id="answers-col-d2e1" class="match-column">
+                            <div class="match-item" data-id="a" data-pair="a">a. Do you want tea or coffee?</div>
+                            <div class="match-item" data-id="b" data-pair="b">b. Do you know her phone number?</div>
+                            <div class="match-item" data-id="c" data-pair="c">c. Is the printer working today?</div>
+                            <div class="match-item" data-id="d" data-pair="d">d. Do you have a laptop I can take home?</div>
+                            <div class="match-item" data-id="e" data-pair="e">e. Is the stationery cabinet open?</div>
+                            <div class="match-item" data-id="f" data-pair="f">f. Are there any envelopes I can use?</div>
+                            <div class="match-item" data-id="g" data-pair="g">g. Are they free for a meeting tomorrow?</div>
+                            <div class="match-item" data-id="h" data-pair="h">h. Does he usually arrive late?</div>
+                            <div class="match-item" data-id="i" data-pair="i">i. Do you have an appointment?</div>
+                        </div>
+                    </div>
+                    <div class="button-group">
+                        <button id="check-d2-ex1">Kiểm tra các cặp</button>
+                    </div>
+                    <div id="feedback-d2-ex1" class="rearrange-feedback"></div>
+
+                    <hr class="exercise-divider">
+
+                    <h3>Exercise 2: Circle the correct word in each question.</h3>
+                    <p>Chọn từ đúng trong mỗi câu hỏi.</p>
+                    <ol>
+                        <li><span class="options-group-inline"><input type="radio" name="d2e2-q1" value="Where"> Where</span><span class="options-group-inline"><input type="radio" name="d2e2-q1" value="Which"> Which</span> are you going on vacation?</li>
+                        <li><span class="options-group-inline"><input type="radio" name="d2e2-q2" value="How"> How</span><span class="options-group-inline"><input type="radio" name="d2e2-q2" value="Who"> Who</span> does the scanner work?</li>
+                        <li><span class="options-group-inline"><input type="radio" name="d2e2-q3" value="What"> What</span><span class="options-group-inline"><input type="radio" name="d2e2-q3" value="When"> When</span> is on the agenda for the meeting?</li>
+                        <li><span class="options-group-inline"><input type="radio" name="d2e2-q4" value="Who"> Who</span><span class="options-group-inline"><input type="radio" name="d2e2-q4" value="Why"> Why</span> is the stationery cabinet locked?</li>
+                        <li><span class="options-group-inline"><input type="radio" name="d2e2-q5" value="Who"> Who</span><span class="options-group-inline"><input type="radio" name="d2e2-q5" value="When"> When</span> do we have a break for lunch?</li>
+                        <li><span class="options-group-inline"><input type="radio" name="d2e2-q6" value="Where"> Where</span><span class="options-group-inline"><input type="radio" name="d2e2-q6" value="What"> What</span> is the CEO's office?</li>
+                        <li><span class="options-group-inline"><input type="radio" name="d2e2-q7" value="When"> When</span><span class="options-group-inline"><input type="radio" name="d2e2-q7" value="What"> What</span> is the door code?</li>
+                        <li><span class="options-group-inline"><input type="radio" name="d2e2-q8" value="What"> What</span><span class="options-group-inline"><input type="radio" name="d2e2-q8" value="Who"> Who</span> do I ask for ink for the printer?</li>
+                    </ol>
+
+                    <div class="button-group">
+                        <button id="check-d2-ex2">Kiểm tra</button>
+                    </div>
+                    <div id="feedback-d2-ex2" class="rearrange-feedback"></div>
+
+                    <hr class="exercise-divider">
+                    
+                    <h3>Exercise 3: Tick the correct questions.</h3>
+                    <p>Chọn câu đúng trong mỗi cặp.</p>
+                    <ol>
+                        <li>
+                            <p><input type="radio" name="d2e3-q1" value="incorrect"> Why does the cafeteria closed?</p>
+                            <p><input type="radio" name="d2e3-q1" value="correct"> Why is the cafeteria closed?</p>
+                        </li>
+                        <li>
+                            <p><input type="radio" name="d2e3-q2" value="correct"> How do I scan this document?</p>
+                            <p><input type="radio" name="d2e3-q2" value="incorrect"> Who do I scan this document?</p>
+                        </li>
+                        <li>
+                            <p><input type="radio" name="d2e3-q3" value="incorrect"> When are the fire alarm tested?</p>
+                            <p><input type="radio" name="d2e3-q3" value="correct"> When is the fire alarm tested?</p>
+                        </li>
+                        <li>
+                            <p><input type="radio" name="d2e3-q4" value="correct"> Do you know where Faisal is?</p>
+                            <p><input type="radio" name="d2e3-q4" value="incorrect"> Does you know where Faisal is?</p>
+                        </li>
+                        <li>
+                            <p><input type="radio" name="d2e3-q5" value="incorrect"> Are Sandra late again?</p>
+                            <p><input type="radio" name="d2e3-q5" value="correct"> Is Sandra late again?</p>
+                        </li>
+                        <li>
+                            <p><input type="radio" name="d2e3-q6" value="incorrect"> Where is for lunch today?</p>
+                            <p><input type="radio" name="d2e3-q6" value="correct"> What is for lunch today?</p>
+                        </li>
+                        <li>
+                            <p><input type="radio" name="d2e3-q7" value="correct"> Does the office stay open on weekends?</p>
+                            <p><input type="radio" name="d2e3-q7" value="incorrect"> Do the office stay open on weekends?</p>
+                        </li>
+                        <li>
+                            <p><input type="radio" name="d2e3-q8" value="correct"> Who do you report to?</p>
+                            <p><input type="radio" name="d2e3-q8" value="incorrect"> Who you do report to?</p>
+                        </li>
+                    </ol>
+
+                    <div class="button-group">
+                        <button id="check-d2-ex3">Kiểm tra</button>
+                    </div>
+                    <div id="feedback-d2-ex3" class="rearrange-feedback"></div>
+
+                    <hr class="exercise-divider">
+
+                    <h3>Exercise 4: Choose the correct words to fill in the blanks.</h3>
+                    <p>Kéo các từ và thả vào đúng ô trống.</p>
+                    <div id="d2e4-word-pool" class="word-bank-style">
+                        <div class="draggable-word" draggable="true" data-word="How">How</div>
+                        <div class="draggable-word" draggable="true" data-word="Who">Who</div>
+                        <div class="draggable-word" draggable="true" data-word="Why">Why</div>
+                        <div class="draggable-word" draggable="true" data-word="When">When</div>
+                        <div class="draggable-word" draggable="true" data-word="What">What</div>
+                        <div class="draggable-word" draggable="true" data-word="Where">Where</div>
+                        <div class="draggable-word" draggable="true" data-word="How2">How</div>
+                        <div class="draggable-word" draggable="true" data-word="What2">What</div>
+                    </div>
+                    <ol>
+                        <li><span class="drop-zone" data-word-answer="How"></span> do you get to work?</li>
+                        <li><span class="drop-zone" data-word-answer="Who"></span> buys the tea and coffee?</li>
+                        <li><span class="drop-zone" data-word-answer="Why"></span> is the printer not working?</li>
+                        <li><span class="drop-zone" data-word-answer="When"></span> does the office open?</li>
+                        <li><span class="drop-zone" data-word-answer="What"></span> do you want for lunch?</li>
+                        <li><span class="drop-zone" data-word-answer="Where"></span> is the meeting room?</li>
+                        <li><span class="drop-zone" data-word-answer="How2"></span> does the projector work?</li>
+                        <li><span class="drop-zone" data-word-answer="What2"></span> is the photocopier code?</li>
+                    </ol>
+                    <div class="button-group">
+                        <button id="check-d2-ex4">Kiểm tra</button>
+                    </div>
+                    <div id="feedback-d2-ex4" class="rearrange-feedback"></div>
+                </div>
+            </details>
+
+            <details class="day-section">
+                <summary>
+                    <h2>Day 3: Listening</h2>
+                </summary>
+                <div class="day-content">
+                    <h3>Exercise 1: Listen and tick the things they ask about.</h3>
+                    <p>Nghe và đánh dấu vào những thứ họ hỏi.</p>
+                    <audio controls class="custom-audio-player">
+                        <source src="audio/Day 3_Ex1.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="options-container">
+                        <p><input type="checkbox" id="d3e1-q1"> computers</p>
+                        <p><input type="checkbox" id="d3e1-q2"> desks</p>
+                        <p><input type="checkbox" id="d3e1-q3"> chairs</p>
+                        <p><input type="checkbox" id="d3e1-q4"> printer cartridges</p>
+                        <p><input type="checkbox" id="d3e1-q5"> pens</p>
+                        <p><input type="checkbox" id="d3e1-q6"> notebooks</p>
+                        <p><input type="checkbox" id="d3e1-q7"> printers</p>
+                        <p><input type="checkbox" id="d3e1-q8"> envelopes</p>
+                        <p><input type="checkbox" id="d3e1-q9"> photocopiers</p>
+                        <p><input type="checkbox" id="d3e1-q10"> files</p>
+                    </div>
+                    <div class="button-group">
+                        <button id="check-d3-ex1">Kiểm tra</button>
+                    </div>
+                    <div id="feedback-d3-ex1" class="rearrange-feedback"></div>
+
+                    <hr class="exercise-divider">
+
+                    <h3>Exercise 2: Now listen to five people asking about services. Complete the questions they ask.</h3>
+                    <p>Bây giờ hãy nghe năm người hỏi về các dịch vụ. Hoàn thành các câu hỏi họ hỏi.</p>
+                    <audio controls class="custom-audio-player">
+                        <source src="audio/Day 3_Ex2.mp3" type="audio/mpeg">
+                    </audio>
+                    <ol>
+                        <li><input type="text" id="d3e2-q1" class="fill-in-input-small" placeholder="Câu trả lời của bạn"> computers?</li>
+                        <li>Can you give me a <input type="text" id="d3e2-q2" class="fill-in-input-small" placeholder="Câu trả lời của bạn">?</li>
+                        <li><input type="text" id="d3e2-q3" class="fill-in-input-small" placeholder="Câu trả lời của bạn"> for delivery?</li>
+                        <li>Could you send it by <input type="text" id="d3e2-q4" class="fill-in-input-small" placeholder="Câu trả lời của bạn"> delivery, please?</li>
+                        <li>When can you <input type="text" id="d3e2-q5" class="fill-in-input-small" placeholder="Câu trả lời của bạn">?</li>
+                    </ol>
+
+                    <div class="button-group">
+                        <button id="check-d3-ex2">Kiểm tra</button>
+                    </div>
+                    <div id="feedback-d3-ex2" class="rearrange-feedback"></div>
+
+                    <hr class="exercise-divider">
+
+                    <h3>Exercise 3: Listen to the replies to the questions in Exercise 2. Match each reply (1-5) with a question (a-e).</h3>
+                    <p>Nghe các câu trả lời cho các câu hỏi ở Bài tập 2. Nối mỗi câu trả lời (1-5) với một câu hỏi (a-e).</p>
+                    <audio controls class="custom-audio-player">
+                        <source src="audio/Day 3_Ex3.mp3" type="audio/mpeg">
+                    </audio>
+
+                    <div id="matching-game-container-d3e3">
+                        <div id="questions-col-d3e3" class="match-column">
+                            <div class="match-item" data-id="a" data-pair="a">a. Do you repair computers?</div>
+                            <div class="match-item" data-id="b" data-pair="b">b. Can you give me a discount?</div>
+                            <div class="match-item" data-id="c" data-pair="c">c. Do you charge for delivery?</div>
+                            <div class="match-item" data-id="d" data-pair="d">d. Could you send it by special delivery, please?</div>
+                            <div class="match-item" data-id="e" data-pair="e">e. When can you deliver?</div>
+                        </div>
+                        <div id="answers-col-d3e3" class="match-column">
+                            <div class="match-item" data-id="1" data-pair="c">1. It's free if you live locally, otherwise we charge 20 pounds.</div>
+                            <div class="match-item" data-id="2" data-pair="d">2. The next delivery will go out on Friday. Is that okay?</div>
+                            <div class="match-item" data-id="3" data-pair="b">3. Yes, of course. It will be 15 pounds extra though.</div>
+                            <div class="match-item" data-id="4" data-pair="a">4. Yes, we do. Bring it in and we'll take a look at it.</div>
+                            <div class="match-item" data-id="5" data-pair="e">5. I'm sorry. That's the best price we can offer you.</div>
+                        </div>
+                    </div>
+                    <div class="button-group">
+                        <button id="check-d3-ex3">Kiểm tra các cặp</button>
+                    </div>
+                    <div id="feedback-d3-ex3" class="rearrange-feedback"></div>
+                </div>
+            </details>
+        </div>
     </div>
-    <script src="placeholder.js"></script>
+    <script src="unit8-workbook.js"></script>
 </body>
 </html>
