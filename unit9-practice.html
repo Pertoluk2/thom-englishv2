@@ -3,22 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Unit Page - Thom's English App</title>
+    <title>Unit 9 Practice</title>
     <link rel="stylesheet" href="style.css">
+    <script src="unit9-practice.js"></script>
 </head>
 <body>
     <div class="page-container">
         <header class="page-header">
-            <h1>New Unit Page</h1>
-            <a href="index.html" class="back-button">← Quay lại Menu</a>
+            <h1>Unit 9: Job Skills & Introductions</h1>
+            <a href="practice.html" class="back-button">← Quay lại menu Luyện tập</a>
         </header>
 
-        <section class="exercise-card">
-            <h2>Bài tập 1</h2>
-            <p>De inhoud voor deze oefening komt hier.</p>
-        </section>
+        <div class="exercise-card">
+            <h2>C. PRACTICE</h2>
+            
+            <details class="day-section" open>
+                <summary><h2>Task 1: Listen to the job interview and decide if the sentences are True (T) or False (F).</h2></summary>
+                <div class="day-content" id="u9p1-container">
+                    <p>Nghe đoạn phỏng vấn xin việc và quyết định câu nào Đúng (T) hay Sai (F).</p>
+                    <audio controls class="custom-audio-player">
+                        <source src="audio/Unit9_Job_Interview.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <table style="width: 100%; text-align: center;">
+                        <thead><tr><th>Statement</th><th>TRUE</th><th>FALSE</th></tr></thead>
+                        <tbody>
+                            <tr data-statement="1"><td>1. Emily is nervous because she has never interviewed before.</td><td data-answer="False"></td><td data-answer="True"></td></tr>
+                            <tr data-statement="2"><td>2. Emily studied Marketing at university.</td><td data-answer="True"></td><td data-answer="False"></td></tr>
+                            <tr data-statement="3"><td>3. The company works with small brands.</td><td data-answer="True"></td><td data-answer="False"></td></tr>
+                            <tr data-statement="4"><td>4. Emily says she is good at social media and writing.</td><td data-answer="True"></td><td data-answer="False"></td></tr>
+                            <tr data-statement="5"><td>5. Emily prefers working alone on difficult projects.</td><td data-answer="True"></td><td data-answer="False"></td></tr>
+                        </tbody>
+                    </table>
+                    <div class="button-group"><button id="check-u9p1">Kiểm tra</button></div>
+                    <div id="feedback-u9p1" class="rearrange-feedback"></div>
+                </div>
+            </details>
 
+            <hr class="exercise-divider">
+
+            <details class="day-section" open>
+                <summary><h2>Task 2: Practice introducing yourself and talking about your skills.</h2></summary>
+                <div class="day-content">
+                    <p>Luyện tập giới thiệu bản thân và nói về các kỹ năng của bạn (Tự nói).</p>
+                    <div class="speaking-prompt">
+                        <h3>Gợi ý</h3>
+                        <p><strong>1. Introduction:</strong> Good morning/afternoon. My name is... I recently graduated with a degree in...</p>
+                        <p><strong>2. Strengths:</strong> I am very good at... I also work well under pressure and enjoy...</p>
+                        <p><strong>3. Experience:</strong> At university/In my last job, I worked on team projects and I enjoy sharing ideas.</p>
+                        <p><strong>4. Goal:</strong> I want to learn and grow here, especially in the field of...</p>
+                    </div>
+                </div>
+            </details>
+        </div>
     </div>
-    <script src="placeholder.js"></script>
 </body>
 </html>

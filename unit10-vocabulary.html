@@ -3,22 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Unit Page - Thom's English App</title>
+    <title>Unit 10 Vocabulary</title>
     <link rel="stylesheet" href="style.css">
+    <script src="unit10-vocabulary.js"></script>
 </head>
 <body>
     <div class="page-container">
         <header class="page-header">
-            <h1>New Unit Page</h1>
-            <a href="index.html" class="back-button">← Quay lại Menu</a>
+            <h1>Unit 10: Health and Sickness</h1>
+            <a href="vocabulary.html" class="back-button">← Quay lại menu Từ vựng</a>
         </header>
 
-        <section class="exercise-card">
-            <h2>Bài tập 1</h2>
-            <p>De inhoud voor deze oefening komt hier.</p>
-        </section>
+        <div class="exercise-card">
+            <h2>A. VOCABULARY</h2>
+            
+            <details class="day-section" open>
+                <summary><h2>Task 1: Write phrases about health based on the phonetic transcriptions.</h2></summary>
+                <div class="day-content">
+                    <p>Viết cụm từ về sức khỏe dựa trên các phiên âm.</p>
+                    <ol style="columns: 2;" id="u10t1-list">
+                        <li>/'hed eik/ → <input type="text" id="u10t1-q1" class="fill-in-input-small"></li>
+                        <li>/flu:/ → <input type="text" id="u10t1-q2" class="fill-in-input-small"></li>
+                        <li>/sɔːr θrəʊt/ → <input type="text" id="u10t1-q3" class="fill-in-input-small"></li>
+                        <li>/'fiːvər/ → <input type="text" id="u10t1-q4" class="fill-in-input-small"></li>
+                        <li>/kɔf/ → <input type="text" id="u10t1-q5" class="fill-in-input-small"></li>
+                        <li>/sniːz/ → <input type="text" id="u10t1-q6" class="fill-in-input-small"></li>
+                        <li>/həv ə 'broʊkən leg/ → <input type="text" id="u10t1-q7" class="fill-in-input-small"></li>
+                        <li>/həv ə 'stʌmək eɪk/ → <input type="text" id="u10t1-q8" class="fill-in-input-small"></li>
+                        <li>/hæv ə tʃek ʌp/ → <input type="text" id="u10t1-q9" class="fill-in-input-small"></li>
+                        <li>/teɪk 'medisn/ → <input type="text" id="u10t1-q10" class="fill-in-input-small"></li>
+                        <li>/hæv ə 'helθi 'daɪət/ → <input type="text" id="u10t1-q11" class="fill-in-input-small"></li>
+                        <li>/teɪk ə rest/ → <input type="text" id="u10t1-q12" class="fill-in-input-small"></li>
+                        <li>/ɡet ɪˈnʌf sliːp/ → <input type="text" id="u10t1-q13" class="fill-in-input-small"></li>
+                        <li>/teɪk keər əv/ → <input type="text" id="u10t1-q14" class="fill-in-input-small"></li>
+                        <li>/drɪŋk ɪˈnʌf 'wɔːtər/ → <input type="text" id="u10t1-q15" class="fill-in-input-small"></li>
+                        <li>/ˈeksəsaɪz 'reɡjələrli/ → <input type="text" id="u10t1-q16" class="fill-in-input-small"></li>
+                    </ol>
+                    <div class="button-group"><button id="check-u10t1">Kiểm tra</button></div>
+                    <div id="feedback-u10t1" class="rearrange-feedback"></div>
+                </div>
+            </details>
 
+            <hr class="exercise-divider">
+
+            <details class="day-section" open>
+                <summary><h2>Task 2: Match each word with its correct picture.</h2></summary>
+                <div class="day-content">
+                    <p>Nối từ vựng với hình ảnh tương ứng (Gebruik maken van een match-game).</p>
+                    <div id="matching-game-u10t2" style="display: flex; gap: 20px;">
+                        <div id="u10t2-words" class="match-column">
+                            <div class="match-item" data-id="1" data-pair="A">1. treat (v)</div>
+                            <div class="match-item" data-id="2" data-pair="B">2. vomit (v)</div>
+                            <div class="match-item" data-id="3" data-pair="C">3. wheelchair (n)</div>
+                            <div class="match-item" data-id="4" data-pair="D">4. swollen ankle (n)</div>
+                            <div class="match-item" data-id="5" data-pair="E">5. bandage (n, v)</div>
+                        </div>
+                        <div id="u10t2-pictures" class="match-column">
+                            <div class="match-item" data-id="A" data-pair="A">A. </div>
+                            <div class="match-item" data-id="B" data-pair="B">B. </div>
+                            <div class="match-item" data-id="C" data-pair="C">C. </div>
+                            <div class="match-item" data-id="D" data-pair="D">D. 
+
+[Image of swollen ankle]
+</div>
+                            <div class="match-item" data-id="E" data-pair="E">E. </div>
+                        </div>
+                    </div>
+                    <div class="button-group" style="margin-top: 20px;"><button id="check-u10t2">Kiểm tra các cặp</button></div>
+                    <div id="feedback-u10t2" class="rearrange-feedback"></div>
+                </div>
+            </details>
+        </div>
     </div>
-    <script src="placeholder.js"></script>
 </body>
 </html>

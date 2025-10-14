@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 11 Grammar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="unit11-grammar.js"></script>
+    <style>
+        .fill-in-input-small { width: 100%; max-width: 250px; }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <header class="page-header">
+            <h1>Unit 11: At the Airport</h1>
+            <a href="grammar.html" class="back-button">← Quay lại menu Ngữ pháp</a>
+        </header>
+
+        <div class="exercise-card">
+            <h2>B. COMMUNICATIVE GRAMMAR</h2>
+            
+            <details class="day-section" open>
+                <summary><h2>Task 1: Rearrange the words to make correct sentences (Check-in/Plane Questions).</h2></summary>
+                <div class="day-content" id="u11t1-container">
+                    <p>Sắp xếp các từ để tạo thành câu hỏi đúng.</p>
+                    <div class="rearrange-item"><p>1. ticket / have / may / your/I/please/see/?</p><div class="sentence-drop-zone" data-correct="May I see your ticket please?"></div></div>
+                    <div class="rearrange-item"><p>2. off / turn/mobile/ devices / phone / your / and / please/?</p><div class="sentence-drop-zone" data-correct="Can you please turn off your phone and mobile devices?"></div></div>
+                    <div class="rearrange-item"><p>3. belt / can / seat / you / fasten / please / your/?</p><div class="sentence-drop-zone" data-correct="Can you please fasten your seat belt?"></div></div>
+                    <div class="rearrange-item"><p>4. window / or / aisle / seat / would / like / you/a/to/?</p><div class="sentence-drop-zone" data-correct="Would you like a window or an aisle seat?"></div></div>
+                    <div class="rearrange-item"><p>5. have/I/blanket / pillow / a / and / please / can / you/?</p><div class="sentence-drop-zone" data-correct="Can I have a blanket and a pillow please?"></div></div>
+                </div>
+                <div class="button-group"><button id="check-u11g1">Kiểm tra</button></div>
+                <div id="feedback-u11g1" class="rearrange-feedback"></div>
+            </details>
+
+            <hr class="exercise-divider">
+
+            <details class="day-section" open>
+                <summary><h2>Task 2: Tick the correct context of each sentence below.</h2></summary>
+                <div class="day-content">
+                    <p>Đánh dấu vào bối cảnh đúng cho mỗi câu.</p>
+                    <table id="u11g2-table" style="width: 100%; text-align: center;">
+                        <thead>
+                            <tr><th>Questions</th><th>Check-in Counter</th><th>Security Check Counter</th><th>On the plane</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr data-question="1"><td>May I have your passport and your ticket, please?</td><td data-context="Check-in Counter"></td><td data-context="Security Check Counter"></td><td data-context="On the plane"></td></tr>
+                            <tr data-question="2"><td>Can you take your shoes off?</td><td data-context="Check-in Counter"></td><td data-context="Security Check Counter"></td><td data-context="On the plane"></td></tr>
+                            <tr data-question="3"><td>Do you have any liquids?</td><td data-context="Check-in Counter"></td><td data-context="Security Check Counter"></td><td data-context="On the plane"></td></tr>
+                            <tr data-question="4"><td>Would you like a window or an aisle seat?</td><td data-context="Check-in Counter"></td><td data-context="Security Check Counter"></td><td data-context="On the plane"></td></tr>
+                            <tr data-question="5"><td>Can you please fasten your seatbelt?</td><td data-context="Check-in Counter"></td><td data-context="Security Check Counter"></td><td data-context="On the plane"></td></tr>
+                        </tbody>
+                    </table>
+                    <div class="button-group"><button id="check-u11g2">Kiểm tra</button></div>
+                    <div id="feedback-u11g2" class="rearrange-feedback"></div>
+                </div>
+            </details>
+        </div>
+    </div>
+</body>
+</html>

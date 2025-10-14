@@ -3,22 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Unit Page - Thom's English App</title>
+    <title>Unit 10 Practice</title>
     <link rel="stylesheet" href="style.css">
+    <script src="unit10-practice.js"></script>
+    <style>
+        .match-list-advice {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 15px;
+        }
+    </style>
 </head>
 <body>
     <div class="page-container">
         <header class="page-header">
-            <h1>New Unit Page</h1>
-            <a href="index.html" class="back-button">← Quay lại Menu</a>
+            <h1>Unit 10: Health and Sickness</h1>
+            <a href="practice.html" class="back-button">← Quay lại menu Luyện tập</a>
         </header>
 
-        <section class="exercise-card">
-            <h2>Bài tập 1</h2>
-            <p>De inhoud voor deze oefening komt hier.</p>
-        </section>
+        <div class="exercise-card">
+            <h2>C. PRACTICE</h2>
+            
+            <details class="day-section" open>
+                <summary><h2>Task 1: Listen and fill in the blanks (Dialogue about Sickness).</h2></summary>
+                <div class="day-content">
+                    <p>Nghe và điền vào chỗ trống đoạn hội thoại về bệnh tật.</p>
+                    <audio controls class="custom-audio-player">
+                        <source src="audio/Unit10_Sickness_Dialogue.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
 
+                    <div class="conversation">
+                        <p>Man: Oh my gosh. Oh no. Are you okay?</p>
+                        <p>Woman: Oh, I don't think so. I feel really (1) <input type="text" id="u10p1-q1" class="fill-in-input-small">.</p>
+                        <p>Man: Wow, you are (2) <input type="text" id="u10p1-q2" class="fill-in-input-small"> up. I'm going to get you some (3) <input type="text" id="u10p1-q3" class="fill-in-input-small">. Here you are.</p>
+                        <p>Woman: Thank you.</p>
+                        <p>Man: What (4) <input type="text" id="u10p1-q4" class="fill-in-input-small">? You seemed okay this morning.</p>
+                        <p>Woman: At first, I thought maybe it was just something I (5) <input type="text" id="u10p1-q5" class="fill-in-input-small"> for dinner last night, but then I started feeling really (6) <input type="text" id="u10p1-q6" class="fill-in-input-small"> and then cold. I've been (7) <input type="text" id="u10p1-q7" class="fill-in-input-small"> all day.</p>
+                        <p>Man: Oh no. Have you taken any (8) <input type="text" id="u10p1-q8" class="fill-in-input-small">?</p>
+                        <p>Woman: I took some cold and (9) <input type="text" id="u10p1-q9" class="fill-in-input-small"> medicine that was in the medicine cabinet. I think it helped a little, but...</p>
+                        <p>Man: Can you eat?</p>
+                        <p>Woman: The thought of food makes me want to (10) <input type="text" id="u10p1-q10" class="fill-in-input-small">.</p>
+                        <p>Man: You need to eat something. I'll make some (11) <input type="text" id="u10p1-q11" class="fill-in-input-small">. Woman: Oh no food. I can't even think about eating.</p>
+                        <p>Man: It seems like the flu. You should see a (12) <input type="text" id="u10p1-q12" class="fill-in-input-small">. You need to get some (13) <input type="text" id="u10p1-q13" class="fill-in-input-small"> meds, and he will better (14) <input type="text" id="u10p1-q14" class="fill-in-input-small"> what's wrong with you.</p>
+                        <p>Woman: My (15) <input type="text" id="u10p1-q15" class="fill-in-input-small"> feels really bad. I think I'm going to puke again.</p>
+                        <p>Man: Oh no. Let me help you to the toilet.</p>
+                    </div>
+                    <div class="button-group"><button id="check-u10p1">Kiểm tra</button></div>
+                    <div id="feedback-u10p1" class="rearrange-feedback"></div>
+                </div>
+            </details>
+            
+            <hr class="exercise-divider">
+
+            <details class="day-section" open>
+                <summary><h2>Task 2: Fill in the blanks and match the symptoms with advice.</h2></summary>
+                <div class="day-content" id="u10p2-container">
+                    <p>Điền vào chỗ trống và nối các triệu chứng với lời khuyên.</p>
+                    <div class="match-list-advice">
+                        <div id="u10p2-symptoms" class="match-column">
+                            <div class="match-item" data-id="1" data-pair="A">1. I have a <input type="text" id="u10p2-q1" class="fill-in-input-small" placeholder="[symptom]">.</div>
+                            <div class="match-item" data-id="2" data-pair="C">2. I have a <input type="text" id="u10p2-q2" class="fill-in-input-small" placeholder="[symptom]">.</div>
+                            <div class="match-item" data-id="3" data-pair="D">3. I have a <input type="text" id="u10p2-q3" class="fill-in-input-small" placeholder="[symptom]">.</div>
+                            <div class="match-item" data-id="4" data-pair="E">4. I have a <input type="text" id="u10p2-q4" class="fill-in-input-small" placeholder="[symptom]">.</div>
+                            <div class="match-item" data-id="5" data-pair="F">5. I have a <input type="text" id="u10p2-q5" class="fill-in-input-small" placeholder="[symptom]">.</div>
+                        </div>
+                        <div id="u10p2-advice" class="match-column">
+                            <div class="match-item" data-id="A" data-pair="A">A. You should take medicine and take a rest.</div>
+                            <div class="match-item" data-id="C" data-pair="C">C. You should stop smoking!</div>
+                            <div class="match-item" data-id="D" data-pair="D">D. You should go to the dentist.</div>
+                            <div class="match-item" data-id="E" data-pair="E">E. You shouldn't drink cold water.</div>
+                            <div class="match-item" data-id="F" data-pair="F">F. You should eat more healthy food and stop eating unhealthy food.</div>
+                        </div>
+                    </div>
+                    <div class="button-group" style="margin-top: 20px;"><button id="check-u10p2-match">Kiểm tra các cặp</button></div>
+                    <div id="feedback-u10p2" class="rearrange-feedback"></div>
+                </div>
+            </details>
+        </div>
     </div>
-    <script src="placeholder.js"></script>
 </body>
 </html>

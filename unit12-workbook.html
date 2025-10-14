@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 12 Workbook (Day 12)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="unit12-workbook.js"></script>
+    <style>
+        .fill-in-input-small {
+            width: 100%;
+            max-width: 250px;
+        }
+        #d12-ex1-sort .category-box {
+            border: 2px solid #FFB6C1;
+            padding: 10px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <header class="page-header">
+            <h1>Unit 12: Family & Emotions (Day 12)</h1>
+            <a href="workbook.html" class="back-button">← Quay lại menu Sách bài tập</a>
+        </header>
+
+        <div class="exercise-card">
+            <h2>DAY 12</h2>
+            
+            <details class="day-section" open>
+                <summary>
+                    <h2>Exercise 1: Fill in the missing letters. Then, put the words into the suitable boxes.</h2>
+                </summary>
+                <div class="day-content">
+                    <p>Hoàn thành từ còn thiếu và sắp xếp de uitspraak van de woorden in de juiste kolommen (/aɪ/, /eɪ/, /oʊ/, /ɪə/).</p>
+                    
+                    <h3 style="margin-top: 20px;">Hoàn thành từ còn thiếu (Invoer is niet-interactief)</h3>
+                    <div id="d12-ex1-words" style="margin-bottom: 20px;">
+                        <ol style="columns: 2;">
+                            <li>/kraɪ/ → C **R** **Y**</li>
+                            <li>/kʌp.əl/ → C **O** U **P** L **E**</li>
+                            <li>/seɪ/ → S **A** Y</li>
+                            <li>/taɪm/ → T **I** M **E**</li>
+                            <li>/meɪk/ → M **A** K **E**</li>
+                            <li>/mʌnθ/ → M **O** N **T** H</li>
+                            <li>/bɪ'li:v/ → B **E** L **I** E **V** E</li>
+                            <li>/fɜːrst/ → F **I** R **S** T</li>
+                            <li>/dæd/ → D **A** D</li>
+                            <li>/tɪər/ → T **E** A **R**</li>
+                            <li>/broʊk/ → B R **O** K **E**</li>
+                            <li>/foʊl.dər/ → F **O** L **D** E **R**</li>
+                            <li>/lɪtl/ → L **I** **T** T L **E**</li>
+                            <li>/beɪb/ → B **A** B **E**</li>
+                            <li>/grædʒ.u'eɪ.ʃən/ → G R **A** D U **A** T **I** O **N**</li>
+                            <li>/praʊd/ → P R **O** U **D**</li>
+                            <li>/hoʊld/ → H **O** L **D**</li>
+                            <li>/fɪər.ləs/ → F **E** A **R** L **E** S **S**</li>
+                            <li>/zuː/ → Z **O** O</li>
+                            <li>/fækt/ → F **A** C **T**</li>
+                        </ol>
+                    </div>
+
+                    <h3>Sắp xếp theo Phát âm Nguyên âm Đôi</h3>
+                    <div id="d12-ex1-sort" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
+                        <div class="category-box" data-sound="/aɪ/"><h3>/aɪ/</h3><div class="word-list">cry, time</div></div>
+                        <div class="category-box" data-sound="/eɪ/"><h3>/eɪ/</h3><div class="word-list">say, make, babe, graduation</div></div>
+                        <div class="category-box" data-sound="/oʊ/"><h3>/oʊ/</h3><div class="word-list">broke, folder, hold, proud</div></div>
+                        <div class="category-box" data-sound="/ɪə/"><h3>/ɪə/</h3><div class="word-list">tear, fearless</div></div>
+                    </div>
+                    <p style="margin-top: 15px;">*(Oefening voor sortering is complex en wordt hier alleen ter referentie getoond)*</p>
+                    
+                    <hr class="exercise-divider">
+                    
+                    <h3>Exercise 2: Listen to the audio and fill in the blanks.</h3>
+                    <p>Nghe đoạn hội thoại "A MAN NEVER CRIES" và điền vào chỗ trống.</p>
+                    <audio controls class="custom-audio-player">
+                        <source src="audio/Day_12_Ex2.mp3" type="audio/mpeg"> 
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div class="conversation">
+                        <p>They always say 'Men don't cry'. Well, I don't believe that is true, because I have seen my dad cry a (1) <input type="text" id="d12-q1" class="fill-in-input-small"> of times. I, however, cry more often.</p>
+                        <p>Last month, when my boyfriend (2) <input type="text" id="d12-q2" class="fill-in-input-small"> up with me, I went to my dad and cried on his (3) <input type="text" id="d12-q3" class="fill-in-input-small">. He always makes me feel better. I remember as a (4) <input type="text" id="d12-q4" class="fill-in-input-small"> girl, I cried when I saw a (5) <input type="text" id="d12-q5" class="fill-in-input-small"> at the zoo for the first time.</p>
+                        <p>I also (6) <input type="text" id="d12-q6" class="fill-in-input-small"> when I'm happy, like at my (7) <input type="text" id="d12-q7" class="fill-in-input-small">. In fact, this was one of the times I saw my dad cry too. He was so (8) <input type="text" id="d12-q8" class="fill-in-input-small"> of me that he could not (9) <input type="text" id="d12-q9" class="fill-in-input-small"> back his tears. Because of my dad and his support, I am (10) <input type="text" id="d12-q10" class="fill-in-input-small">.</p>
+                    </div>
+                    <div class="button-group" style="margin-top: 20px;">
+                        <button id="check-d12-ex2">Kiểm tra</button>
+                    </div>
+                    <div id="feedback-d12-ex2" class="rearrange-feedback"></div>
+
+                    <hr class="exercise-divider">
+                    
+                    <h3>Exercise 3: Write the missing words to have the similar meaning to say 'NICE TO MEET YOU'.</h3>
+                    <p>Hoàn thành các cách nói tương đương với 'Rất vui được gặp bạn'.</p>
+                    <ol>
+                        <li>Nice to <input type="text" id="d12-ex3-q1" class="fill-in-input-small" placeholder="...meet"> you!</li>
+                        <li><input type="text" id="d12-ex3-q2" class="fill-in-input-small" placeholder="It's a pleasure"> to meet you!</li>
+                        <li><input type="text" id="d12-ex3-q3" class="fill-in-input-small" placeholder="Pleased"> to meet you!</li>
+                        <li>Good <input type="text" id="d12-ex3-q4" class="fill-in-input-small" placeholder="to"> meet you!</li>
+                        <li>My <input type="text" id="d12-ex3-q5" class="fill-in-input-small" placeholder="pleasure">!</li>
+                        <li>Glad <input type="text" id="d12-ex3-q6" class="fill-in-input-small" placeholder="to meet you">!</li>
+                    </ol>
+                    <div class="button-group" style="margin-top: 20px;">
+                        <button id="check-d12-ex3">Kiểm tra</button>
+                    </div>
+                    <div id="feedback-d12-ex3" class="rearrange-feedback"></div>
+                </div>
+            </details>
+        </div>
+    </div>
+</body>
+</html>

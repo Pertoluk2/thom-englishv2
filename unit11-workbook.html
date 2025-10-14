@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 11 Workbook (Day 11)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="unit11-workbook.js"></script>
+    <style>
+        .fill-in-input-small {
+            width: 100%;
+            max-width: 250px;
+        }
+        .match-column {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #matching-game-d11-e2 {
+            display: flex; 
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <header class="page-header">
+            <h1>Unit 11: Daily Routines (Day 11)</h1>
+            <a href="workbook.html" class="back-button">← Quay lại menu Sách bài tập</a>
+        </header>
+
+        <div class="exercise-card">
+            <h2>DAY 11</h2>
+            
+            <details class="day-section" open>
+                <summary>
+                    <h2>Exercise 1: Listen to the audio and write down all what you hear.</h2>
+                </summary>
+                <div class="day-content">
+                    <p>Nghe và chép lại toàn bộ đoạn văn.</p>
+                    <audio controls class="custom-audio-player">
+                        <source src="audio/Day_11_Ex1.mp3" type="audio/mpeg"> 
+                        Your browser does not support the audio element.
+                    </audio>
+                    <textarea rows="6" style="width: 100%;"></textarea>
+                </div>
+            </details>
+
+            <hr class="exercise-divider">
+
+            <details class="day-section" open>
+                <summary>
+                    <h2>Exercise 2: Match the pronunciation of these words with the right pictures and write down the words.</h2>
+                </summary>
+                <div class="day-content">
+                    <p>Nối cách phát âm với hình ảnh đúng và viết từ (Huishoudelijke taken).</p>
+                    
+                    <div id="matching-game-d11-e2">
+                        <div id="d11-col-left" class="match-column">
+                            <div class="match-item" data-id="1" data-pair="g">1. /gou tə də 'su:.pa, ma:r.kıt/</div>
+                            <div class="match-item" data-id="2" data-pair="j">2. /broj ðə ti:0/</div>
+                            <div class="match-item" data-id="3" data-pair="c">3. /kli:n ðə haus/</div>
+                            <div class="match-item" data-id="4" data-pair="d">4. /aırn ðə klouðz/</div>
+                            <div class="match-item" data-id="5" data-pair="e">5. /prı'per ðə mi:lz/</div>
+                            <div class="match-item" data-id="6" data-pair="f">6. /meık ðə bed/</div>
+                            <div class="match-item" data-id="7" data-pair="i">7. /du 'həซmw3:rk/</div>
+                            <div class="match-item" data-id="8" data-pair="h">8. /gou tə bed/</div>
+                            <div class="match-item" data-id="9" data-pair="a">9. /du ðə 'la:n.dri/</div>
+                            <div class="match-item" data-id="10" data-pair="b">10. /wa:ƒ ðə 'dıʃiz/</div>
+                        </div>
+                        <div id="d11-col-right" class="match-column">
+                            <div class="match-item" data-id="a" data-pair="i">a. 
+
+[Image of cooking]
+</div>
+                            <div class="match-item" data-id="b" data-pair="j">b. </div>
+                            <div class="match-item" data-id="c" data-pair="f">c. </div>
+                            <div class="match-item" data-id="d" data-pair="g">d. </div>
+                            <div class="match-item" data-id="e" data-pair="e">e. </div>
+                            <div class="match-item" data-id="f" data-pair="a">f. </div>
+                            <div class="match-item" data-id="g" data-pair="d">g. </div>
+                            <div class="match-item" data-id="h" data-pair="h">h. </div>
+                            <div class="match-item" data-id="i" data-pair="b">i. 
+
+[Image of person preparing meals]
+</div>
+                            <div class="match-item" data-id="j" data-pair="c">j. </div>
+                        </div>
+                    </div>
+                    <div class="button-group" style="margin-top: 20px;">
+                        <button id="check-d11-ex2">Kiểm tra các cặp</button>
+                    </div>
+                    <div id="feedback-d11-ex2" class="rearrange-feedback"></div>
+                    
+                    <h3 style="margin-top: 20px;">Viết từ vựng (dựa op de juiste uitspraak)</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                        <input type="text" id="d11-word-1" placeholder="1. Go to the supermarket" class="fill-in-input-small">
+                        <input type="text" id="d11-word-6" placeholder="6. Make the bed" class="fill-in-input-small">
+                        <input type="text" id="d11-word-2" placeholder="2. Brush the teeth" class="fill-in-input-small">
+                        <input type="text" id="d11-word-7" placeholder="7. Do homework" class="fill-in-input-small">
+                        <input type="text" id="d11-word-3" placeholder="3. Clean the house" class="fill-in-input-small">
+                        <input type="text" id="d11-word-8" placeholder="8. Go to bed" class="fill-in-input-small">
+                        <input type="text" id="d11-word-4" placeholder="4. Iron the clothes" class="fill-in-input-small">
+                        <input type="text" id="d11-word-9" placeholder="9. Do the laundry" class="fill-in-input-small">
+                        <input type="text" id="d11-word-5" placeholder="5. Prepare the meals" class="fill-in-input-small">
+                        <input type="text" id="d11-word-10" placeholder="10. Wash the dishes" class="fill-in-input-small">
+                    </div>
+                    <div class="button-group" style="margin-top: 20px;">
+                        <button id="check-d11-words">Kiểm tra từ vựng</button>
+                    </div>
+                    <div id="feedback-d11-words" class="rearrange-feedback"></div>
+
+                </div>
+            </details>
+        </div>
+    </div>
+</body>
+</html>

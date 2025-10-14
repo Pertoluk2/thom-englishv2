@@ -3,22 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Unit Page - Thom's English App</title>
+    <title>Unit 9 Grammar</title>
     <link rel="stylesheet" href="style.css">
+    <script src="unit9-grammar.js"></script>
+    <style>
+        .fill-in-input-small { width: 100%; max-width: 250px; }
+    </style>
 </head>
 <body>
     <div class="page-container">
         <header class="page-header">
-            <h1>New Unit Page</h1>
-            <a href="index.html" class="back-button">← Quay lại Menu</a>
+            <h1>Unit 9: Job Skills & Introductions</h1>
+            <a href="grammar.html" class="back-button">← Quay lại menu Ngữ pháp</a>
         </header>
 
-        <section class="exercise-card">
-            <h2>Bài tập 1</h2>
-            <p>De inhoud voor deze oefening komt hier.</p>
-        </section>
+        <div class="exercise-card">
+            <h2>B. COMMUNICATIVE GRAMMAR (TỪ WORKBOOK)</h2>
+            
+            <details class="day-section" open>
+                <summary><h2>Task 1: Put the words in the correct order to make correct sentences (Day 3).</h2></summary>
+                <div class="day-content" id="u9g1-container">
+                    <p>Sắp xếp các từ để tạo thành câu hỏi đúng (Sử dụng kiến thức ngữ pháp về câu hỏi).</p>
+                    <div class="rearrange-item"><p>1. he / experience / this / Has/for/got/job/ enough/?</p><div class="sentence-drop-zone" data-correct="Has he got enough experience for this job?"></div></div>
+                    <div class="rearrange-item"><p>2. degree / you / in / have / business / Do / higher / a /?</p><div class="sentence-drop-zone" data-correct="Do you have a higher degree in business?"></div></div>
+                    <div class="rearrange-item"><p>3. business / has / He / the / MBA / School. / from / Boston/an/.</p><div class="sentence-drop-zone" data-correct="He has an MBA from Boston Business School."></div></div>
+                    <div class="rearrange-item"><p>4. receptionist/ don't / a / full-time / have / They/.</p><div class="sentence-drop-zone" data-correct="They don't have a full-time receptionist."></div></div>
+                    <div class="rearrange-item"><p>5. excellent / have / assistant / Does / résumé / an / your/?</p><div class="sentence-drop-zone" data-correct="Does your assistant have an excellent résumé?"></div></div>
+                </div>
+                <div class="button-group"><button id="check-u9g1">Kiểm tra</button></div>
+                <div id="feedback-u9g1" class="rearrange-feedback"></div>
+            </details>
 
+            <hr class="exercise-divider">
+
+            <details class="day-section" open>
+                <summary><h2>Task 2: Choose the correct information based on an online profile (Day 3).</h2></summary>
+                <div class="day-content" id="u9g2-container">
+                    <p>Dựa trên hồ sơ của Hamid Syal, trả lời các câu hỏi sau:</p>
+                    <div class="profile-summary" style="background-color: #f0f0f0; padding: 15px; border-radius: 5px;">
+                        <p><strong>HAMID SYAL</strong>: Creative and proactive marketing professional with varied experience in the travel industry. Started as a receptionist in the hotel industry, worked up to deputy manager. Worked in Japan, India, South Africa, for prestigious hotels (The Ritz). Advises travel agencies, gives presentations at industry events. **Skills**: Excellent people skills, enjoys working in teams. **Qualifications**: BS Business and Hospitality Management, London (2010); Diploma in Marketing, CIM (2015).</p>
+                    </div>
+                    <ol>
+                        <li>What industry does Hamid work in? <span class="options-group-inline"><input type="radio" name="u9g2-q1" value="Hotels"> Hotels</span><span class="options-group-inline"><input type="radio" name="u9g2-q1" value="Travel"> Travel</span><span class="options-group-inline"><input type="radio" name="u9g2-q1" value="Airlines"> Airlines</span></li>
+                        <li>Where has Hamid worked before? <span class="options-group-inline"><input type="radio" name="u9g2-q2" value="A department store"> A department store</span><span class="options-group-inline"><input type="radio" name="u9g2-q2" value="A restaurant"> A restaurant</span><span class="options-group-inline"><input type="radio" name="u9g2-q2" value="A hotel"> A hotel</span></li>
+                        <li>How does Hamid describe his people skills? <span class="options-group-inline"><input type="radio" name="u9g2-q3" value="Average"> Average</span><span class="options-group-inline"><input type="radio" name="u9g2-q3" value="Good"> Good</span><span class="options-group-inline"><input type="radio" name="u9g2-q3" value="Excellent"> Excellent</span></li>
+                        <li>In what situation does Hamid say he enjoys working? <span class="options-group-inline"><input type="radio" name="u9g2-q4" value="Alone"> Alone</span><span class="options-group-inline"><input type="radio" name="u9g2-q4" value="In teams"> In teams</span><span class="options-group-inline"><input type="radio" name="u9g2-q4" value="With clients"> With clients</span></li>
+                    </ol>
+                </div>
+                <div class="button-group"><button id="check-u9g2">Kiểm tra</button></div>
+                <div id="feedback-u9g2" class="rearrange-feedback"></div>
+            </details>
+        </div>
     </div>
-    <script src="placeholder.js"></script>
 </body>
 </html>

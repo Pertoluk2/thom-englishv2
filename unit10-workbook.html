@@ -3,22 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Unit Page - Thom's English App</title>
+    <title>Unit 10 Workbook (Day 10)</title>
     <link rel="stylesheet" href="style.css">
+    <script src="unit10-workbook.js"></script>
+    <style>
+        .match-list-d1 { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 10px;
+        }
+        .match-list-d1 .match-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <div class="page-container">
         <header class="page-header">
-            <h1>New Unit Page</h1>
-            <a href="index.html" class="back-button">← Quay lại Menu</a>
+            <h1>Unit 10: Health and Sickness</h1>
+            <a href="workbook.html" class="back-button">← Quay lại menu Sách bài tập</a>
         </header>
 
-        <section class="exercise-card">
-            <h2>Bài tập 1</h2>
-            <p>De inhoud voor deze oefening komt hier.</p>
-        </section>
+        <div class="exercise-card">
+            <h2>DAY 1: Health Problems</h2>
+            
+            <details class="day-section" open>
+                <summary><h2>Exercise 1: Choose the best answers to complete the following sentences.</h2></summary>
+                <div class="day-content" id="u10d1e1-container">
+                    <div class="match-list-d1">
+                        <div class="match-item">1. I have a headache.</div><div class="match-item" data-id="A">A. </div>
+                        <div class="match-item">2. I have a toothache.</div><div class="match-item" data-id="B">B. </div>
+                        <div class="match-item">3. I have a backache.</div><div class="match-item" data-id="C">C. </div>
+                        <div class="match-item">4. I have a stomach ache.</div><div class="match-item" data-id="D">D. </div>
+                        <div class="match-item">5. I have an earache.</div><div class="match-item" data-id="E">E. </div>
+                        <div class="match-item">6. I have a cough.</div><div class="match-item" data-id="F">F. </div>
+                        <div class="match-item">7. I have a sore throat.</div><div class="match-item" data-id="G">G. </div>
+                        <div class="match-item">8. I have a flu.</div><div class="match-item" data-id="H">H. </div>
+                        <div class="match-item">9. I have a runny nose.</div><div class="match-item" data-id="I">I. </div>
+                        <div class="match-item">10. I have a broken leg.</div><div class="match-item" data-id="J">J. </div>
+                    </div>
+                    <p style="margin-top: 15px;">**Oefeningstype: Drag and Drop (of Matchen)**</p>
+                </div>
+            </details>
 
+            <hr class="exercise-divider">
+
+            <h2>DAY 2: Advice & Obligations</h2>
+
+            <details class="day-section" open>
+                <summary><h2>Exercise 2: Fill in the blanks using should or shouldn't.</h2></summary>
+                <div class="day-content">
+                    <ol id="u10d2e2-list">
+                        <li>Jane has a headache. She <input type="text" id="u10d2e2-q1" class="fill-in-input-small"> take medicine.</li>
+                        <li>You have a toothache. You <input type="text" id="u10d2e2-q2" class="fill-in-input-small"> eat sweets.</li>
+                        <li>My grandma has a backache. She <input type="text" id="u10d2e2-q3" class="fill-in-input-small"> carry heavy things.</li>
+                        <li>He feels tired. He <input type="text" id="u10d2e2-q4" class="fill-in-input-small"> take a rest.</li>
+                        <li>Lily has a broken arm. She <input type="text" id="u10d2e2-q5" class="fill-in-input-small"> play volleyball.</li>
+                        <li>My sister is fat. She <input type="text" id="u10d2e2-q6" class="fill-in-input-small"> have a healthy diet.</li>
+                        <li>My father coughs a lot. He <input type="text" id="u10d2e2-q7" class="fill-in-input-small"> stop smoking.</li>
+                        <li>My husband is always busy. He <input type="text" id="u10d2e2-q8" class="fill-in-input-small"> get enough sleep.</li>
+                        <li>She has a flu. She <input type="text" id="u10d2e2-q9" class="fill-in-input-small"> go to work today.</li>
+                        <li>We <input type="text" id="u10d2e2-q10" class="fill-in-input-small"> eat a lot of fast food.</li>
+                        <li>We <input type="text" id="u10d2e2-q11" class="fill-in-input-small"> have regular health checkups.</li>
+                        <li>You have a cold. You <input type="text" id="u10d2e2-q12" class="fill-in-input-small"> drink cold water.</li>
+                        <li>You have dirty hands. You <input type="text" id="u10d2e2-q13" class="fill-in-input-small"> wash your hands.</li>
+                        <li>Jim has a fever. He <input type="text" id="u10d2e2-q14" class="fill-in-input-small"> go to a doctor.</li>
+                        <li>We <input type="text" id="u10d2e2-q15" class="fill-in-input-small"> brush our teeth at least twice a day.</li>
+                    </ol>
+                    <div class="button-group">
+                        <button id="check-u10d2e2">Kiểm tra</button>
+                    </div>
+                    <div id="feedback-u10d2e2" class="rearrange-feedback"></div>
+                </div>
+            </details>
+
+            <hr class="exercise-divider">
+
+            <h2>DAY 3: Medical Advice & Symptoms</h2>
+
+            <details class="day-section" open>
+                <summary><h2>Exercise 1: Read Nadia's note and write answers to the questions.</h2></summary>
+                <div class="day-content">
+                    <p>Instructions from my doctor:</p>
+                    <ul style="list-style-type: none; padding-left: 0; background-color: #f0fff0; padding: 15px; border-radius: 5px;">
+                        <li>- I have to rest after my operation.</li>
+                        <li>- I don't have to see the surgeon again. Instead, I can see Dr. Turner.</li>
+                        <li>- I have to take my medication twice a day.</li>
+                        <li>- I must eat before taking the pills.</li>
+                        <li>- I mustn't go back to work for 14 days.</li>
+                        <li>- I don't have to do any special exercises. A gentle daily walk is fine.</li>
+                        <li>- I have to call Dr. Turner immediately if I feel sick again.</li>
+                    </ul>
+                    <ol>
+                        <li>Does she have to see the surgeon again? <input type="text" id="u10d3e1-q1" class="fill-in-input-small"></li>
+                        <li>What must she do before taking her medication? <input type="text" id="u10d3e1-q2" class="fill-in-input-small"></li>
+                        <li>Can she go back work immediately? <input type="text" id="u10d3e1-q3" class="fill-in-input-small"></li>
+                        <li>Does she have to do any special exercise? <input type="text" id="u10d3e1-q4" class="fill-in-input-small"></li>
+                        <li>What does she have to do if she feels sick again? <input type="text" id="u10d3e1-q5" class="fill-in-input-small"></li>
+                    </ol>
+                    <div class="button-group">
+                        <button id="check-u10d3e1">Kiểm tra</button>
+                    </div>
+                    <div id="feedback-u10d3e1" class="rearrange-feedback"></div>
+                </div>
+            </details>
+        </div>
     </div>
-    <script src="placeholder.js"></script>
 </body>
 </html>

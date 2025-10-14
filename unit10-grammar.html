@@ -3,22 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Unit Page - Thom's English App</title>
+    <title>Unit 10 Grammar</title>
     <link rel="stylesheet" href="style.css">
+    <script src="unit10-grammar.js"></script>
+    <style>
+        .fill-in-input-small { width: 100%; max-width: 250px; }
+    </style>
 </head>
 <body>
     <div class="page-container">
         <header class="page-header">
-            <h1>New Unit Page</h1>
-            <a href="index.html" class="back-button">← Quay lại Menu</a>
+            <h1>Unit 10: Health and Sickness</h1>
+            <a href="grammar.html" class="back-button">← Quay lại menu Ngữ pháp</a>
         </header>
 
-        <section class="exercise-card">
-            <h2>Bài tập 1</h2>
-            <p>De inhoud voor deze oefening komt hier.</p>
-        </section>
+        <div class="exercise-card">
+            <h2>B. COMMUNICATIVE GRAMMAR</h2>
+            
+            <details class="day-section" open>
+                <summary><h2>Task 1: Complete the following conversations using the given questions or advice.</h2></summary>
+                <div class="day-content">
+                    <p>Hoàn thành các đoạn hội thoại sau bằng cách sử dụng các câu hỏi hoặc lời khuyên đã cho. (Matching game)</p>
+                    <div id="u10g1-word-bank" class="word-bank-style">
+                        <div class="draggable-word" draggable="true" data-word="Do you have a headache?">Do you have a headache?</div>
+                        <div class="draggable-word" draggable="true" data-word="What's the matter?">What's the matter?</div>
+                        <div class="draggable-word" draggable="true" data-word="Can you give me some advice?">Can you give me some advice?</div>
+                        <div class="draggable-word" draggable="true" data-word="You should drink warm water.">You should drink warm water.</div>
+                        <div class="draggable-word" draggable="true" data-word="You should get enough sleep.">You should get enough sleep.</div>
+                    </div>
+                    <ol id="u10g1-conversations">
+                        <li>A: <span class="drop-zone" data-word-answer="What's the matter?"></span> B: I don't feel well.</li>
+                        <li>A: <span class="drop-zone" data-word-answer="Do you have a headache?"></span> B: No, I don't. I think it's just a cold.</li>
+                        <li>A: I have a sore throat. What should I do? B: <span class="drop-zone" data-word-answer="You should drink warm water."></span></li>
+                        <li>A: I feel tired all the time. B: <span class="drop-zone" data-word-answer="You should get enough sleep."></span></li>
+                        <li>A: I need to know what I should do. B: <span class="drop-zone" data-word-answer="Can you give me some advice?"></span></li>
+                    </ol>
+                    <div class="button-group"><button id="check-u10g1">Kiểm tra</button></div>
+                    <div id="feedback-u10g1" class="rearrange-feedback"></div>
+                </div>
+            </details>
+            
+            <hr class="exercise-divider">
 
+            <details class="day-section" open>
+                <summary><h2>Task 2: Complete the sentences with must, have to, must not, or don't have to (Obligations).</h2></summary>
+                <div class="day-content">
+                    <p>Hoàn thành các câu sau bằng cách sử dụng **must, have to, must not** hoặc **don't have to**.</p>
+                    <ol>
+                        <li>You <input type="text" id="u10g2-q1" class="fill-in-input-small" placeholder="must/have to"> take your medicine twice a day, or your symptoms won't improve.</li>
+                        <li>You <input type="text" id="u10g2-q2" class="fill-in-input-small" placeholder="must not"> drink cold water; it could make your sore throat worse.</li>
+                        <li>You <input type="text" id="u10g2-q3" class="fill-in-input-small" placeholder="don't have to"> go to the clinic every day. Once a week is enough.</li>
+                        <li>Patients <input type="text" id="u10g2-q4" class="fill-in-input-small" placeholder="must/have to"> wear a mask in the hospital at all times.</li>
+                        <li>You <input type="text" id="u10g2-q5" class="fill-in-input-small" placeholder="must/have to"> eat before taking these pills, or they might upset your stomach.</li>
+                    </ol>
+                    <div class="button-group"><button id="check-u10g2">Kiểm tra</button></div>
+                    <div id="feedback-u10g2" class="rearrange-feedback"></div>
+                </div>
+            </details>
+        </div>
     </div>
-    <script src="placeholder.js"></script>
 </body>
 </html>
